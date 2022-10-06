@@ -82,10 +82,10 @@ body #firstSection .textOranged {
 }
 body #firstSection .btnSection {
   background-color: yellow;
-  background-color: orange;
   border: 1px solid black;
   border-radius: 8px;
-  padding: 1rem 1.3rem;
+  padding: 0.6rem 1.3rem;
+  margin-top: 5px;
 }
 body #firstSection .btnSection:hover {
   background-color: rgb(63, 27, 163);
@@ -100,6 +100,14 @@ body #aside {
   border-radius: 6px;
   box-shadow: 10px 5px 5px;
   background-color: orange;
+}
+body #aside .aside__btn {
+  background-color: rgb(72, 72, 245);
+  color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 0.6rem 1.3rem;
+  margin-top: 5px;
 }
 @media only screen and (max-width: 768px) {
   body #aside {

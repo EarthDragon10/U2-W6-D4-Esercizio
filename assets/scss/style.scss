@@ -85,6 +85,12 @@ body {
 
 		@include borderAside;
 
+		.aside__btn {
+			background-color: rgb(72, 72, 245);
+			color: white;
+			@include btnBorder;
+		}
+
 		@include tablet {
 			display: flex;
 			align-items: center;
