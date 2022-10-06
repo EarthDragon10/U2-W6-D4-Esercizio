@@ -55,6 +55,12 @@ body #main {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 768px) {
+  body #main {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}
 body #firstSection {
   padding-right: 1rem;
 }
@@ -81,6 +87,20 @@ body #aside {
   border-radius: 6px;
   box-shadow: 10px 5px 5px;
   background-color: orange;
+}
+@media only screen and (max-width: 768px) {
+  body #aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  body #aside h2 {
+    display: none;
+  }
+  body #aside .box {
+    margin: 0 10px;
+  }
 }
 body #footer {
   margin: 0 auto;
