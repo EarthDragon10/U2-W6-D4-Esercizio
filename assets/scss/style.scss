@@ -2,12 +2,9 @@
 @import "./variabiles";
 @import "./mixin";
 @import "./responsive-breakpoints";
-@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap");
+@import "./fonts.scss";
 
 body {
-	font-family: "Gemunu Libre", sans-serif;
-	height: 100vh;
-
 	#header {
 		@include borderNavbar;
 		@include setSize(100px, 95%);
@@ -72,11 +69,12 @@ body {
 		.btnSection {
 			background-color: $yellow;
 			@include btnBorder;
-		}
 
-		.btnSection:hover {
-			background-color: $violet;
-			color: white;
+			&:hover {
+				background-color: $violet;
+				color: white;
+				cursor: pointer;
+			}
 		}
 	}
 
