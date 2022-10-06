@@ -6,6 +6,7 @@
 
 body {
 	font-family: "Gemunu Libre", sans-serif;
+	height: 100vh;
 
 	#header {
 		@include borderNavbar;
@@ -16,6 +17,11 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		padding: 0 1.5rem;
+
+		#header__title {
+			color: white;
+			font-size: 2rem;
+		}
 	}
 
 	#logo {
@@ -33,9 +39,13 @@ body {
 		.textLinks {
 			@include textNavbar;
 
+			transition: all 0.5s ease-in-out;
+
 			&:hover {
-				transform: scale(1.2);
-				transform: rotate(5deg);
+				padding: 2px 5px;
+				background-color: white;
+				border-radius: 5px;
+				border: grey 1px solid;
 				color: orange;
 			}
 		}
@@ -50,7 +60,6 @@ body {
 			flex-direction: column;
 			margin-top: 1rem;
 		}
-		// flex-direction: column;
 	}
 
 	#firstSection {
